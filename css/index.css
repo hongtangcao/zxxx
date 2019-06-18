@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    height: 100px;
+    width: 100%;
+}
+.head_left{
+    margin-left: 5%;
+    float: left;
+    line-height: 100px;
+}
+.search{
+    margin-left: 5%;
+    height: 25px;
+    border: darkgrey solid 1px;
+    border-radius:20px;
+    font-size: 5px;
+}
