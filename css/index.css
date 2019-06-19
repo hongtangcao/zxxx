@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    font: 12px 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
 }
 ul{
     margin: 0;
@@ -10,8 +10,12 @@ ul{
 .head{
     height: 42px;
     width: 100%;
-    padding: 0 5%;
     border-bottom: gainsboro solid 1px;
+}
+.head_content{
+    height: 42px;
+    width: 980px;
+    margin: auto;
 }
 .head_left{
     float: left;
@@ -20,10 +24,26 @@ ul{
 }
 .head_title{
     float: left;
-    font: 12px 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
+    padding: 0 10px;
     color: #8590a6;
 }
-.search{
+.head_left_menu li{
+    float: left;
+    display: flex;align-items: center; /*垂直居中*/
+    height: 42px;
+    padding: 0 10px;
+    cursor: pointer;
+    list-style: none;
+}
+.head_left_menu li:hover{
+    background-color: rgba(192,192,192,.3);
+}
+.head_left_menu li a{
+    text-decoration: none;
+    color: #8590a6;
+}
+/*搜索框*/
+/*.search{
     float: left;
     margin-left: 50px;
     padding: 2px 5px;
@@ -50,7 +70,7 @@ ul{
 }
 .search_button:focus{
     outline: none;
-}
+}*/
 
 .head_right_login{
     float: right;
@@ -82,11 +102,14 @@ ul{
     background-color: rgba(192,192,192,.3);
 }
 .head_right_login_menu li a{
-    font: 12px 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
     text-decoration: none;
     color: #8590a6;
 }
 
+.swiper-container{
+    width: 980px;
+    height: 200px;
+}
 /*内容左*/
 .container_left{
     float: left;
