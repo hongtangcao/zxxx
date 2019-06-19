@@ -3,19 +3,24 @@ body{
     padding: 0;
     font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
 }
+ul{
+    margin: 0;
+    padding: 0;
+}
 .head{
-    height: 55px;
+    height: 42px;
     width: 100%;
     padding: 0 5%;
     border-bottom: gainsboro solid 1px;
 }
 .head_left{
     float: left;
-    height: 55px;
+    height: 42px;
     display: flex;align-items: center; /*垂直居中*/
 }
 .head_title{
     float: left;
+    font: 12px 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
     color: #8590a6;
 }
 .search{
@@ -49,7 +54,7 @@ body{
 
 .head_right_login{
     float: right;
-    height: 55px;
+    height: 42px;
     width: auto;
     padding: 0 10px;
     display: flex;align-items: center; /*垂直居中*/
@@ -59,20 +64,16 @@ body{
 .head_right_login img{
     border-radius: 50%;
     margin: 0 15px;
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
 }
 .head_right_login_name{
     margin: 0 10px;
 }
-.head_right_login_menu ul{
-    padding: 0;
-    margin: 0;
-}
 .head_right_login_menu li{
     float: left;
     display: flex;align-items: center; /*垂直居中*/
-    height: 55px;
+    height: 42px;
     padding: 0 10px;
     cursor: pointer;
     list-style: none;
@@ -81,6 +82,7 @@ body{
     background-color: rgba(192,192,192,.3);
 }
 .head_right_login_menu li a{
+    font: 12px 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', 'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
     text-decoration: none;
     color: #8590a6;
 }
@@ -91,5 +93,21 @@ body{
     width: 150px;
     height: 1000px;
     border-right: gainsboro solid 1px;
+}
+.container_left li{
+    float: bottom;
+    list-style: none;
+}
+.container_left li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #292421;
+    line-height: 50px;
+    width: 150px;
+    height: 50px;
+}
+.container_left li a:hover{
+    background-color: gainsboro;
 }
 /*内容右*/
