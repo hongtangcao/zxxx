@@ -17,6 +17,7 @@ a{
     color: #222;
 }
 a:hover{
+    text-decoration: none;
     color: #222;
 }
 .head{
@@ -236,7 +237,7 @@ a:hover{
 }
 .container_menu_list ul{
     position: absolute;
-    top: 18px;
+    top: 10px;
     left: 0;
     overflow: hidden;
     background: #fff;
@@ -259,24 +260,45 @@ a:hover{
 }
 .container_menu_list li a{
     display: block;
-    padding: 5px 15px 5px 25px;
+    padding: 5px 15px 5px 12px;
     white-space: nowrap;
-    transition: all .2s;
     color: #222;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.container_menu_list li a:hover{
+    padding-left: 17px;
+    background-color: rgb(229,233,239);
+}
+.container_menu_list li a i{
+    font-size:16px;
+    color: rgb(135,211,236);
+    padding-right: 10px;
 }
 
 /*内容推荐*/
 .container_content_recommend{
     height: 260px;
+    margin-top: 10px;
     padding-bottom: 40px;
 }
 .container_content_recommend_banner{
     width: 440px;
     height: 220px;
+    border-radius: 4px;
+    overflow: hidden;
     float: left;
 }
+.container_content_recommend_banner img{
+    width: 440px;
+}
 .container_content_recommend_banner_box{
-    border-radius: 4px;
+    width: 880px;
+}
+.container_content_recommend_banner_box img{
+    width: 440px;
+    height: 220px;
+    float: left;
 }
 .container_content_recommend_card{
     float: left;

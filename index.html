@@ -100,9 +100,9 @@
                     </div>
                     <div class="container_menu_list">
                         <ul>
-                            <li><a href="#">极限的理论及应用</a></li>
-                            <li><a href="#">导数概念及应用</a></li>
-                            <li><a href="#">积分概念及应用</a></li>
+                            <li><a href="#"><i class="fa">&#xf105</i>极限的理论及应用</a></li>
+                            <li><a href="#"><i class="fa">&#xf105</i>导数概念及应用</a></li>
+                            <li><a href="#"><i class="fa">&#xf105</i>积分概念及应用</a></li>
                         </ul>
                     </div>
                 </a>
@@ -117,9 +117,9 @@
                     </div>
                     <div class="container_menu_list">
                         <ul>
-                            <li><a href="#">极限的理论及应用</a></li>
-                            <li><a href="#">导数概念及应用</a></li>
-                            <li><a href="#">积分概念及应用</a></li>
+                            <li><a href="#"><i class="fa">&#xf105</i>极限的理论及应用</a></li>
+                            <li><a href="#"><i class="fa">&#xf105</i>导数概念及应用</a></li>
+                            <li><a href="#"><i class="fa">&#xf105</i>积分概念及应用</a></li>
                         </ul>
                     </div>
                 </a>
@@ -309,9 +309,29 @@
     </div>
     <div class="container_content_recommend">
         <div class="container_content_recommend_banner">
-            <div class="container_content_recommend_banner_box">
-
+            <div class="container-swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/recommend_1.jpg"  alt=""></div>
+                    <div class="swiper-slide"><img src="img/recommend_2.jpg" alt=""></div>
+                </div>
+                <div class="container_content_recommend_swiper_title">
+                    <ul>
+                        <a href="#">
+                            宝箱里面是什么？
+                        </a>
+                        <a href="#">
+                            宝箱里面是什么？
+                        </a>
+                        <a href="#">
+                            宝箱里面是什么？
+                        </a>
+                    </ul>
+                </div>
             </div>
+<!--            <div class="container_content_recommend_banner_box">-->
+<!--                <img src="img/recommend_1.jpg"  alt="">-->
+<!--                <img src="img/recommend_2.jpg" alt="">-->
+<!--            </div>-->
         </div>
         <div class="container_content_recommend_card">
 
@@ -345,23 +365,33 @@
 
 <!--轮播图Script-->
 <script>
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper_header = new Swiper ('.swiper-container', {
         direction: 'horizontal', // 水平切换选项
         loop: true, // 循环模式选项
         speed:300,
         autoplay : {
             delay:3000
         },
-    })
-</script>
-<script>
-    $(document).ready(function(){
-        $(".container_menu>ul>li").hover(function(){
-            $(this).children(".container_menu_list").delay(400).fadeIn("slow");
-        },function(){
-            $(this).children(".container_menu_list").fadeOut("slow");
-        });
+    });
+    var mySwiper_container = new Swiper ('.container-swiper-container', {
+        direction: 'horizontal', // 水平切换选项
+        loop: true, // 循环模式选项
+        speed:300,
+        autoplay : {
+            delay:3000
+        },
     });
 </script>
+<!--菜单列表显示-->
+<script>
+    $(document).ready(function(){
+        $(".container_menu>ul>li").hover(function () {
+            $(this).children(".container_menu_list").css("display","block");
+        },function(){
+            $(this).children(".container_menu_list").css("display","none");
+        })
+    });
+</script>
+
 </body>
 </html>
