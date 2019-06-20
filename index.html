@@ -91,7 +91,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" onmousemove="show_menu(this)">
+                <a href="#">
                     <div class="container_menu_num">
                         <span>43</span>
                     </div>
@@ -115,7 +115,13 @@
                     <div class="container_menu_name">
                         物理
                     </div>
-
+                    <div class="container_menu_list">
+                        <ul>
+                            <li><a href="#">极限的理论及应用</a></li>
+                            <li><a href="#">导数概念及应用</a></li>
+                            <li><a href="#">积分概念及应用</a></li>
+                        </ul>
+                    </div>
                 </a>
             </li>
             <li>
@@ -129,15 +135,15 @@
                 </a>
             </li>
             <li>
-            <a href="#">
-                <div class="container_menu_num">
-                    <span>43</span>
-                </div>
-                <div class="container_menu_name">
-                    生物
-                </div>
-            </a>
-        </li>
+                <a href="#">
+                    <div class="container_menu_num">
+                        <span>43</span>
+                    </div>
+                    <div class="container_menu_name">
+                        生物
+                    </div>
+                </a>
+            </li>
             <li>
                 <a href="#">
                     <div class="container_menu_num">
@@ -301,6 +307,31 @@
 
         </ul>
     </div>
+    <div class="container_content_recommend">
+        <div class="container_content_recommend_banner">
+            <div class="container_content_recommend_banner_box">
+
+            </div>
+        </div>
+        <div class="container_content_recommend_card">
+
+        </div>
+        <div class="container_content_recommend_card">
+
+        </div>
+        <div class="container_content_recommend_card">
+
+        </div>
+        <div class="container_content_recommend_card">
+
+        </div>
+        <div class="container_content_recommend_card">
+
+        </div>
+        <div class="container_content_recommend_card">
+
+        </div>
+    </div>
 </div>
 
 <!--数学与信息科学学院	物理与光电工程学院	化学化工与环境工程学院
@@ -324,10 +355,13 @@
     })
 </script>
 <script>
-    function show_menu(obj) {
-        console.log(111);
-        $(obj).children("container_menu_list").fadeIn("slow");
-    }
+    $(document).ready(function(){
+        $(".container_menu>ul>li").hover(function(){
+            $(this).children(".container_menu_list").delay(400).fadeIn("slow");
+        },function(){
+            $(this).children(".container_menu_list").fadeOut("slow");
+        });
+    });
 </script>
 </body>
 </html>

@@ -231,10 +231,10 @@ a:hover{
 }
 .container_menu_list{
     position: relative;
+    display: none;
     margin: 0;
 }
 .container_menu_list ul{
-    display: none;
     position: absolute;
     top: 18px;
     left: 0;
@@ -263,4 +263,27 @@ a:hover{
     white-space: nowrap;
     transition: all .2s;
     color: #222;
+}
+
+/*内容推荐*/
+.container_content_recommend{
+    height: 260px;
+    padding-bottom: 40px;
+}
+.container_content_recommend_banner{
+    width: 440px;
+    height: 220px;
+    float: left;
+}
+.container_content_recommend_banner_box{
+    border-radius: 4px;
+}
+.container_content_recommend_card{
+    float: left;
+    margin: 0 0 20px 20px;
+    width: 160px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fff;
 }
