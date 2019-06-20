@@ -57,35 +57,36 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container_head">
+    <!--轮播图-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide"><img src="img/swiper_1.png"></div>
+            <div class="swiper-slide"><img src="img/swiper_2.png"></div>
+            <div class="swiper-slide"><img src="img/swiper_3.png"></div>
         </div>
     </div>
+    <div class="container_search_position">
+        <div class="container_search">
+            <div class="container_search_form">
+                <input type="text" class="container_search_input" placeholder="search">
+                <button class="container_search_button" type="button">搜索</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--主内容-->
+<div class="container_content">
 
 </div>
 <script>
     var mySwiper = new Swiper ('.swiper-container', {
-        direction: 'horizontal', // 垂直切换选项
+        direction: 'horizontal', // 水平切换选项
         loop: true, // 循环模式选项
-
-        // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // 如果需要前进后退按钮
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // 如果需要滚动条
-        scrollbar: {
-            el: '.swiper-scrollbar',
+        speed:300,
+        autoplay : {
+            delay:3000
         },
     })
 </script>

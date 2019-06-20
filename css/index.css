@@ -7,10 +7,19 @@ ul{
     margin: 0;
     padding: 0;
 }
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
 .head{
+    position: fixed;
+    z-index: 999;
     height: 42px;
     width: 100%;
-    border-bottom: gainsboro solid 1px;
+    background-color: hsla(0,0%,100%,.4);
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
 .head_content{
     height: 42px;
@@ -24,8 +33,8 @@ ul{
 }
 .head_title{
     float: left;
+    color: #222;
     padding: 0 10px;
-    color: #8590a6;
 }
 .head_left_menu li{
     float: left;
@@ -40,10 +49,10 @@ ul{
 }
 .head_left_menu li a{
     text-decoration: none;
-    color: #8590a6;
+    color: #222;
 }
 /*搜索框*/
-/*.search{
+.search{
     float: left;
     margin-left: 50px;
     padding: 2px 5px;
@@ -65,12 +74,6 @@ ul{
     border: none;
     background: none;
 }
-.search_input:focus{
-    outline: none;
-}
-.search_button:focus{
-    outline: none;
-}*/
 
 .head_right_login{
     float: right;
@@ -103,34 +106,65 @@ ul{
 }
 .head_right_login_menu li a{
     text-decoration: none;
-    color: #8590a6;
+    color: #222;
 }
 
+/*轮播图*/
 .swiper-container{
+    width: 100%;
+    height: 170px;
+}
+
+/*搜索框*/
+.container_search_position{
+    position: relative;
     width: 980px;
-    height: 200px;
+    margin: auto;
 }
-/*内容左*/
-.container_left{
-    float: left;
-    width: 150px;
-    height: 1000px;
-    border-right: gainsboro solid 1px;
+.container_search{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 268px;
+    padding: 2px 2px 2px 72px;
+    background-color: #e5e9ef;
+    background-color: rgba(0,0,0,.12);
+    border-radius: 6px;
+    font-size: 12px;
+    z-index: 10;
 }
-.container_left li{
-    float: bottom;
-    list-style: none;
-}
-.container_left li a{
+.container_search_form{
+    background-color: hsla(0,0%,100%,.88);
     display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #292421;
-    line-height: 50px;
-    width: 150px;
-    height: 50px;
+    height: 32px;
+    border-radius: 4px;
+    transition: background-color .2s;
 }
-.container_left li a:hover{
-    background-color: gainsboro;
+.container_search_input{
+    float: left;
+    width: 200px;
+    color: #222;
+    font-size: 12px;
+    overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
 }
-/*内容右*/
+.container_search_button{
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 48px;
+    min-width: 0;
+    cursor: pointer;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border: none;
+    background: none;
+}
+
