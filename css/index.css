@@ -20,6 +20,9 @@ a:hover{
     text-decoration: none;
     color: #222;
 }
+p{
+    margin-bottom: 0;
+}
 .head{
     position: fixed;
     z-index: 999;
@@ -289,18 +292,17 @@ a:hover{
     overflow: hidden;
     float: left;
 }
-.container_content_recommend_banner img{
-    width: 440px;
-}
 .container_content_recommend_banner_box{
-    width: 880px;
-}
-.container_content_recommend_banner_box img{
     width: 440px;
     height: 220px;
-    float: left;
+}
+.container_content_recommend_banner_box img{
+    position: absolute;
+    width: 440px;
+    height: 220px;
 }
 .container_content_recommend_card{
+    position: relative;
     float: left;
     margin: 0 0 20px 20px;
     width: 160px;
@@ -308,4 +310,57 @@ a:hover{
     overflow: hidden;
     border-radius: 4px;
     background: #fff;
+}
+.container_content_recommend_card img{
+    width: 160px;
+    height: 100px;
+}
+.container_content_recommend_card:hover >.card_mark{
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    top: 0;
+    padding: 10px 5px;
+}
+.container_content_recommend_card:hover >.card_mark>.author{
+    opacity: 1;
+}
+.container_content_recommend_card:hover >.card_mark>.play{
+    opacity: 1;
+}
+.card_mark{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 160px;
+    /*height: 100%;*/
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    overflow: hidden;
+    background: linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.6) 65%,rgba(0,0,0,.9));
+}
+.title{
+    color: #fff;
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.author{
+    opacity: 0;
+    color: #99a2aa;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    transition: all .6s;
+}
+.play{
+    opacity: 0;
+    color: #99a2aa;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    transition: all .6s;
 }

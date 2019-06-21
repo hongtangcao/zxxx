@@ -309,23 +309,10 @@
     </div>
     <div class="container_content_recommend">
         <div class="container_content_recommend_banner">
-            <div class="container-swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/recommend_1.jpg"  alt=""></div>
-                    <div class="swiper-slide"><img src="img/recommend_2.jpg" alt=""></div>
-                </div>
-                <div class="container_content_recommend_swiper_title">
-                    <ul>
-                        <a href="#">
-                            宝箱里面是什么？
-                        </a>
-                        <a href="#">
-                            宝箱里面是什么？
-                        </a>
-                        <a href="#">
-                            宝箱里面是什么？
-                        </a>
-                    </ul>
+            <div class="container_content_recommend_banner_box">
+                <div class="con_banner_img">
+                    <img src="img/recommend_1.jpg" id="1" alt="">
+                    <img src="img/recommend_2.jpg" id="2" alt="">
                 </div>
             </div>
 <!--            <div class="container_content_recommend_banner_box">-->
@@ -334,22 +321,52 @@
 <!--            </div>-->
         </div>
         <div class="container_content_recommend_card">
-
+            <img src="img/jijiu.jpg">
+            <div class="card_mark">
+                <p class="title">i love you three thousands</p>
+                <p class="author">上传：张颖</p>
+                <p class="play">播放: 520万</p>
+            </div>
         </div>
         <div class="container_content_recommend_card">
-
+            <img src="img/jsj.jpg">
+            <div class="card_mark">
+                <p class="title">i love you three thousands</p>
+                <p class="author">上传：张颖</p>
+                <p class="play">播放: 520万</p>
+            </div>
         </div>
         <div class="container_content_recommend_card">
-
+            <img src="img/pj.jpg">
+            <div class="card_mark">
+                <p class="title">i love you three thousands</p>
+                <p class="author">上传：张颖</p>
+                <p class="play">播放: 520万</p>
+            </div>
         </div>
         <div class="container_content_recommend_card">
-
+            <img src="img/sj.jpg">
+            <div class="card_mark">
+                <p class="title">i love you three thousands</p>
+                <p class="author">上传：张颖</p>
+                <p class="play">播放: 520万</p>
+            </div>
         </div>
         <div class="container_content_recommend_card">
-
+            <img src="img/sx.png">
+            <div class="card_mark">
+                <p class="title">i love you three thousands</p>
+                <p class="author">上传：张颖</p>
+                <p class="play">播放: 520万</p>
+            </div>
         </div>
         <div class="container_content_recommend_card">
-
+            <img src="img/wl.png">
+            <div class="card_mark">
+                <p class="title">i love you three thousands</p>
+                <p class="author">上传：张颖</p>
+                <p class="play">播放: 520万</p>
+            </div>
         </div>
     </div>
 </div>
@@ -373,14 +390,6 @@
             delay:3000
         },
     });
-    var mySwiper_container = new Swiper ('.container-swiper-container', {
-        direction: 'horizontal', // 水平切换选项
-        loop: true, // 循环模式选项
-        speed:300,
-        autoplay : {
-            delay:3000
-        },
-    });
 </script>
 <!--菜单列表显示-->
 <script>
@@ -392,6 +401,12 @@
         })
     });
 </script>
-
+<!--轮播图Container_recommend-->
+<script>
+    $(document).ready(function () {
+        /*$("#2").animate({opacity:'0'});*/
+        $("#2").fadeOut('slow');
+    })
+</script>
 </body>
 </html>
