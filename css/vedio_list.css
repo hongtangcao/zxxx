@@ -1,0 +1,80 @@
+.list_wrap{
+    margin: 0;
+    padding: 0;
+    transition: all .2s;
+}
+.list_wrap:hover{
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.15);
+}
+.list_wrap ul{
+    list-style: none;
+}
+.list_wrap ul li{
+    overflow: hidden;
+    border-bottom: 1px solid #e5e9ef;
+    position: relative;
+}
+.list_wrap a{
+    text-decoration: none;
+}
+.num{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    line-height: 70px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #b8c0cc;
+    font-family: simhei, serif;
+}
+.content {
+    padding: 20px 0 0 70px;
+    overflow: hidden;
+}
+.content .img {
+    position: relative;
+    float: left;
+}
+.rank-item .content .img .cover img {
+    border-radius: 4px;
+}
+.lazy-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.img img{
+    width: 114px;
+    height: 70px;
+}
+fieldset, img {
+    border: none;
+    vertical-align: middle;
+}
+.info {
+    padding-bottom: 20px;
+    margin-left: 130px;
+    height: 70px;
+    position: relative;
+}
+.title {
+    height: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 14px;!important;
+    color: #222;
+}
+.detail {
+    margin-top: 20px;
+    color: #99a2aa;
+}
+.data-box {
+     width: 80px;
+     margin-right: 20px;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     overflow: hidden;
+ }
