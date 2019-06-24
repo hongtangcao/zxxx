@@ -17,6 +17,7 @@
     <script src="js/swiper.esm.js"></script>
     <script src="js/swiper.esm.bundle.js"></script>
     <script src="js/recommend_banner.js"></script>
+    <script src="js/menu_display.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -571,16 +572,6 @@
         autoplay : {
             delay:3000
         },
-    });
-</script>
-<!--菜单列表显示-->
-<script>
-    $(document).ready(function(){
-        $(".container_menu>ul>li").hover(function () {
-            $(this).children(".container_menu_list").css("display","block");
-        },function(){
-            $(this).children(".container_menu_list").css("display","none");
-        })
     });
 </script>
 <!--轮播图Container_recommend-->
