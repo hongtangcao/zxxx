@@ -1,4 +1,5 @@
 .list_wrap{
+    height: 110px;
     margin: 0;
     padding: 0;
     transition: all .2s;
@@ -11,6 +12,7 @@
 }
 .list_wrap ul li{
     overflow: hidden;
+    height: 110px;
     border-bottom: 1px solid #e5e9ef;
     position: relative;
 }
@@ -31,7 +33,7 @@
     font-family: simhei, serif;
 }
 .content {
-    padding: 20px 0 0 70px;
+    padding: 20px 0 0 70px;!important;
     overflow: hidden;
 }
 .content .img {
@@ -47,6 +49,7 @@
     height: 100%;
 }
 .img img{
+    border-radius: 4px;
     width: 114px;
     height: 70px;
 }

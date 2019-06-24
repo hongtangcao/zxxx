@@ -18,6 +18,7 @@
     <script src="js/swiper.esm.bundle.js"></script>
     <script src="js/recommend_banner.js"></script>
     <script src="js/menu_display.js"></script>
+    <script src="js/scroll.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -70,7 +71,10 @@
     </div>
     <div class="container_search_position">
         <div class="container_search">
-
+            <a href="#" class="link-ranking">
+                <i class="fa">&#xf012</i>
+                <span>排行榜</span>
+            </a>
             <div class="container_search_form">
                 <input type="text" class="container_search_input" placeholder="search">
                 <button class="container_search_button" type="button"><i class="fa fa-search" style="font-size:18px;color:#1E90FF"></i></button>
@@ -373,7 +377,7 @@
 <!--        视频卡片-->
         <div class="container_content_new_left">
             <div class="container_content_title">
-                <img src="img/new.png">
+                <img src="img/new.png" alt="">
                 <span class="name">最新视频</span>
             </div>
             <div class="container_content_new_card">
@@ -446,7 +450,8 @@
 <!--        列表-->
         <div class="container_content_new_list">
             <div class="container_header">
-                <h3>新闻公告</h3>
+                <img src="img/notice.png" alt="">
+                <h3>通知公告</h3>
             </div>
             <div class="container_list">
                 <ul>
@@ -465,7 +470,7 @@
         <!--        视频卡片-->
         <div class="container_content_new_left">
             <div class="container_content_title">
-                <img src="img/hot.png">
+                <img src="img/hot.png" alt="">
                 <span class="name">播放最多</span>
             </div>
             <div class="container_content_new_card">
@@ -538,7 +543,8 @@
         <!--        列表-->
         <div class="container_content_new_list">
             <div class="container_header">
-                <h3>新闻公告</h3>
+                <img src="img/top.png" alt="">
+                <h3>院系排行</h3>
             </div>
             <div class="container_list">
                 <ul>
@@ -553,7 +559,9 @@
         </div>
     </div>
 </div>
-
+<div class="foot">
+    版权所有©cccht 地址：山东省潍坊市东风东街5147号 邮编：11318230@qq.com
+</div>
 <!--数学与信息科学学院	物理与光电工程学院	化学化工与环境工程学院
 生物与农业工程学院	机电与车辆工程学院	信息与控制工程学院
 计算机工程学院	建筑工程学院	文学与新闻传播学院
@@ -574,12 +582,5 @@
         },
     });
 </script>
-<!--轮播图Container_recommend-->
-<!--<script>-->
-<!--    $(document).ready(function () {-->
-<!--        /*$("#2").animate({opacity:'0'});*/-->
-<!--        $("#2").fadeOut('slow');-->
-<!--    })-->
-<!--</script>-->
 </body>
 </html>
