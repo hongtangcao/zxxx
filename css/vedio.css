@@ -1,10 +1,155 @@
 .vedio_left{
+    margin-top: 62px;
     width: 660px;
     height: 1000px;
     float: left;
 }
+.vedio_info{
+    margin-bottom: 16px;
+}
+.vedio_title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 26px;
+    height: 26px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.vedio_play_info{
+    margin-top: 11px;
+    font-size: 12px;
+    height: 16px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.vedio_play{
+    width: 660px;
+    height: 450px;
+}
+.vedio_play_box video{
+    width: 660px;
+    height: 450px;
+    outline: none;
+    background-color: #212121;
+}
 .vedio_list{
+    padding-left: 30px;
+    margin-top: 62px;
     width: 320px;
     height: 1000px;
     float: left;
+}
+.vedio_author{
+    width: 100%;
+    padding: 19px 20px;
+    height: 80px;
+    margin-bottom: 16px;
+}
+.vedio_author img{
+    height: 42px;
+    margin: 0 10px;
+    float: left;
+}
+.vedio_author_box{
+    height: 42px;
+    width: 200px;
+}
+.vedio_author_name{
+    float: top;
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+}
+.vedio_author_des{
+    color: #999;
+    float: bottom;
+    height: 17px;
+    line-height: 17px;
+}
+.vedio_play_list{
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    color: #222;
+    border-radius: 2px;
+}
+.head-con{
+    display: flex;
+    color: #222;
+    padding: 10px 16px 0;
+}
+.head-con h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.range-box{
+    flex: 1;
+}
+.range-box span{
+    float: right;
+    font-size: 12px;
+    color: #999;
+    line-height: 16px;
+}
+.cur-list{
+    padding: 4px 0;
+    transition: all .3s;
+}
+.list-box{
+    padding: 0 6px;
+    max-height: 340px;
+    overflow: auto;
+}
+.list-box li{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    /*color: #6d757a;*/
+    margin: 5px 0;
+    transition: all .3s;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-box li:hover{
+    background: #fff;
+}
+.list_title{
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 10px;
+    color: #212121;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-box i{
+    display: none;
+    height: 14px;
+    width: 14px;
+    font-size: 20px;
+    margin-right: 5px;
+    font-style: normal;
+    vertical-align: baseline;
+    text-align: center;
+    text-transform: none;
+    line-height: 30px;
+    text-rendering: optimizeLegibility;
+}
+.on{
+    background: #fff;
+    padding: 0 6px;
+}
+.on a{
+    color: #03a0d6;
+}
+.on i{
+    display: inline-block;
 }

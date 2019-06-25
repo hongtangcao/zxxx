@@ -203,6 +203,7 @@ p{
 /*主内容*/
 .container_content{
     width: 980px;
+    height: auto;
     margin: auto;
 }
 /*菜单*/
