@@ -30,7 +30,7 @@
 }
 .vedio_play{
     width: 660px;
-    height: 450px;
+    /*height: 450px;*/
 }
 .vedio_play_box video{
     width: 660px;
@@ -38,6 +38,16 @@
     outline: none;
     background-color: #212121;
 }
+.vedio_remark{
+    width: 660px;
+}
+.vedio_des{
+    margin-top: 16px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e9ef;
+}
+
 .vedio_list{
     padding-left: 30px;
     margin-top: 62px;
@@ -109,7 +119,6 @@
     display: block;
     height: 30px;
     line-height: 30px;
-    /*color: #6d757a;*/
     margin: 5px 0;
     transition: all .3s;
     border-radius: 3px;
@@ -146,10 +155,151 @@
 .on{
     background: #fff;
     padding: 0 6px;
+    color: #03a0d6;
 }
 .on a{
     color: #03a0d6;
 }
 .on i{
     display: inline-block;
+}
+.vedio_remark_title{
+    font-size: 18px;
+    line-height: 24px;
+    color: #222;
+    margin: 0 0 20px;
+}
+.remark_num{
+    font-size: 18px;
+    line-height: 24px;
+    color: #222;
+    margin: 0 0 20px;
+}
+.vedio_remark_top{
+    margin: 0 0 24px;
+    height: 37px;
+    border-bottom: 1px solid #e5e9ef;
+}
+.vedio_remark_top_tabs{
+    float: left;
+    margin-bottom: -1px;
+}
+.tabs_ul{
+    list-style: none;
+    color: #222;
+}
+.tabs_ul li{
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    padding: 8px 0;
+    margin-right: 16px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.comment-send{
+    margin: 10px 0;
+}
+.user-face{
+    float: left;
+    margin: 7px 0 0 5px;
+    position: relative;
+}
+.user-face img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.textarea-container{
+    position: relative;
+    margin-left: 85px;
+    margin-right: 80px;
+}
+.textarea-container textarea{
+    font-size: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #f4f5f7;
+    border: 1px solid #e5e9ef;
+    overflow: auto;
+    border-radius: 4px;
+    color: #555;
+    width: 100%!important;
+    height: 65px;
+    transition: 0s;
+    padding: 5px 10px;
+    line-height: normal;
+}
+.comment-submit{
+    width: 70px;
+    height: 64px;
+    position: absolute;
+    right: -80px;
+    top: 0;
+    padding: 4px 15px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 60px;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #00a1d6;
+    border: 1px solid #00a1d6;
+    transition: .1s;
+    user-select: none;
+    outline: none;
+}
+.container_list{
+    padding-top: 20px;
+}
+.user-face-img{
+    float: left;
+    margin: 24px 0 0 5px;
+    position: relative;
+}
+.user-face-img img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.con{
+    position: relative;
+    margin-left: 85px;
+    padding: 22px 0 14px;
+    border-top: 1px solid #e5e9ef;
+}
+.user{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-bottom: 4px;
+    display: block;
+    word-wrap: break-word;
+}
+.user_name{
+    font-size: 12px;
+    color: #6d757a;
+}
+.user p{
+    line-height: 20px;
+    padding: 2px 0;
+    font-size: 14px;
+    text-shadow: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.remark_info{
+    color: #99a2aa;
+    line-height: 26px;
+    font-size: 12px;
+}
+.plad{
+    margin-right: 20px;
 }
