@@ -20,6 +20,7 @@
     <script src="js/menu_display.js"></script>
     <script src="js/scroll.js"></script>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/vedio_list.css">
     <link rel="stylesheet" href="css/space.css">
 </head>
 <body>
@@ -67,284 +68,42 @@
             <div class="user_head_img">
                 <img src="img/headimg.jpg">
             </div>
-            <div class="user_name">曹洪堂</div>
+            <div class="user_name"><a href="#" name="name" onclick="loadXML(this.name)">曹洪堂</a></div>
             <div class="user_list">
                 <ul>
-                    <li><a href="#">课程</a></li>
-                    <li><a href="#">笔记</a></li>
-                    <li><a href="#">消息</a></li>
-                    <li><a href="#">动态</a></li>
-                    <li><a href="#">收藏</a></li>
-                    <li><a href="#">历史</a></li>
+                    <li><a href="#" name="course" onclick="loadXML(this.name)">课程</a></li>
+                    <li><a href="#" name="notice" onclick="loadXML(this.name)">消息</a></li>
+                    <li><a href="#" name="dynamic" onclick="loadXML(this.name)">动态</a></li>
+                    <li><a href="#" name="collection" onclick="loadXML(this.name)">收藏</a></li>
+                    <li><a href="#" name="history" onclick="loadXML(this.name)">历史</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="space_content">
+    <div class="space_content" id="main">
         <div class="course">
-            <div class="course-title">
-                <h3>我的课程</h3>
-            </div>
-            <div class="container_content_new_card">
-                <div class="container_content_card">
-                    <img src="img/jijiu.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jsj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/pj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/sj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jijiu.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jsj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/pj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/sj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jijiu.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jsj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/pj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/sj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jijiu.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jsj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/pj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/sj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jijiu.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jsj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/pj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/sj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jijiu.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jsj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/pj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/sj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jijiu.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jsj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/pj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/sj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jijiu.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/jsj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/pj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-                <div class="container_content_card">
-                    <img src="img/sj.jpg" alt="">
-                    <div class="card_mark">
-                        <p class="title">i love you three thousand times</p>
-                        <p class="author">上传：张颖</p>
-                        <p class="play">播放: 520万</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        $("#main").load("space/course.html");
+    });
+    function loadXML(name) {
+        if (name == "name")
+            $("#main").load("space/name.html");
+        if (name == "notice")
+            $("#main").load("space/notice.html");
+        if (name == "course")
+            $("#main").load("space/course.html");
+        if (name == "dynamic")
+            $("#main").load("space/dynamic.html");
+        if (name == "collection")
+            $("#main").load("space/collection.html");
+        if (name == "history")
+            $("#main").load("space/history.html");
+    }
+</script>
 </body>
 </html>

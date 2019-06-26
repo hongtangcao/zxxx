@@ -1,0 +1,191 @@
+<div class="main_con" style="display: none;">
+    <div class="course-title">
+        <h3>账户设置</h3>
+    </div>
+    <div class="name_list">
+        <ul>
+            <li>
+                <button type="button" class="btn btn-light" name="info" onclick="loadXML(this.name)">基本资料</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-light" name="headimg" onclick="loadXML(this.name)">我的头像</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-light" name="pwd" onclick="loadXML(this.name)">密码管理</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-light" name="log" onclick="loadXML(this.name)">登录日志</button>
+            </li>
+        </ul>
+    </div>
+    <div class="name_info">
+        <ul>
+            <li>
+                <div class="form-group">
+                    <label for="mail">邮箱:</label>
+                    <input type="text" class="form-control" id="mail" placeholder="11318230@qq.com">
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <label for="tel">手机:</label>
+                    <input type="text" class="form-control" id="tel" placeholder="13070701612">
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <label for="name">姓名:</label>
+                    <input type="text" class="form-control" id="name" placeholder="曹洪堂">
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <label for="snum">学号:</label>
+                    <input type="text" class="form-control" id="snum" placeholder="16021240026">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="name_headimg">
+        <img src="./img/headimg.jpg">
+        <button type="button" class="btn btn-light">更改</button>
+    </div>
+    <div class="name_pwd">
+        <ul>
+            <li>
+                <div class="form-group">
+                    <label for="pwd">原密码:</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="">
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <label for="new_pwd">新密码:</label>
+                    <input type="text" class="form-control" id="new_pwd" placeholder="">
+                </div>
+            </li>
+            <li>
+                <div class="form-group">
+                    <label for="re_new_pwd">重复新密码:</label>
+                    <input type="text" class="form-control" id="re_new_pwd" placeholder="">
+                </div>
+            </li>
+            <button type="button" class="btn btn-light mx-auto">更改</button>
+        </ul>
+    </div>
+    <div class="name_log">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>时间</th>
+                    <th>IP</th>
+                    <th>账户</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2019.6.26</td>
+                    <td>210.44.65.1</td>
+                    <td>13070701612</td>
+                    <td>登录</td>
+                </tr>
+                <tr>
+                    <td>2019.6.26</td>
+                    <td>210.44.65.1</td>
+                    <td>13070701612</td>
+                    <td>登录</td>
+                </tr>
+                <tr>
+                    <td>2019.6.26</td>
+                    <td>210.44.65.1</td>
+                    <td>13070701612</td>
+                    <td>登录</td>
+                </tr>
+                <tr>
+                    <td>2019.6.26</td>
+                    <td>210.44.65.1</td>
+                    <td>13070701612</td>
+                    <td>登录</td>
+                </tr>
+                <tr>
+                    <td>2019.6.26</td>
+                    <td>210.44.65.1</td>
+                    <td>13070701612</td>
+                    <td>登录</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<style>
+    .name_list{
+        height: 50px;
+    }
+    .name_list ul li{
+        float: left;
+        margin-left: 10px;
+    }
+    .name_info{
+        display: none;
+        margin: auto;
+        width: 50%;
+        height: 50px;
+    }
+    .name_headimg{
+        display: none;
+        text-align: center;
+        width: 80px;
+        margin: auto;
+    }
+    .name_headimg img{
+        border-radius: 50%;
+        padding: 20px 0;
+        width: 80px;
+    }
+    .name_pwd{
+        display: none;
+        margin: auto;
+        width: 50%;
+        height: 50px;
+    }
+    .name_log{
+        display: none;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        $(".name_info").fadeIn();
+    });
+    function loadXML(name) {
+        if (name == "info"){
+            $(".name_headimg").fadeOut();
+            $(".name_pwd").fadeOut();
+            $(".name_log").fadeOut();
+            $(".name_info").fadeIn();
+        }
+        if (name == "log"){
+            $(".name_headimg").fadeOut();
+            $(".name_pwd").fadeOut();
+            $(".name_info").fadeOut();
+            $(".name_log").fadeIn();
+        }
+        if (name == "headimg"){
+            $(".name_pwd").fadeOut();
+            $(".name_log").fadeOut();
+            $(".name_info").fadeOut();
+            $(".name_headimg").fadeIn();
+        }
+        if (name == "pwd"){
+            $(".name_headimg").fadeOut();
+            $(".name_log").fadeOut();
+            $(".name_info").fadeOut();
+            $(".name_pwd").fadeIn();
+        }
+    }
+</script>
+<script>
+    $(document).ready(function () {
+        $(".main_con").fadeIn();
+    });
+</script>

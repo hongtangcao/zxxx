@@ -45,6 +45,7 @@ li{
     height: 40px;
     line-height: 40px;
     text-align: center;
+    transition: all .3s;
     /*border-bottom: 1px solid #eee;*/
 }
 .user_list ul li:hover{
@@ -58,7 +59,7 @@ li{
     width: 780px;
     padding-top: 62px;
 }
-.course{
+.main_con{
     border-radius: 4px;
     padding: 15px 20px 18px;
 }
