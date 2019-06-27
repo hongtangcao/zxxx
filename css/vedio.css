@@ -326,3 +326,9 @@
 .check-con{
     margin-bottom: 20px;
 }
+#play{
+    display: none;
+}
+#check{
+    display: none;
+}

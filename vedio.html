@@ -64,7 +64,7 @@
 </div>
 
 <div class="container_content">
-    <!--<div class="vedio_left">
+    <div class="vedio_left" id="play">
         <div class="vedio_info">
             <span class="vedio_title">I love you three thousand times</span>
             <span class="vedio_play_info">类别：文学</span>
@@ -138,8 +138,8 @@
                 </div>
             </div>
         </div>
-    </div>-->
-    <div class="vedio_left">
+    </div>
+    <div class="vedio_left" id="check">
         <div class="vedio_info">
             <span class="vedio_title">I love you three thousand times</span>
             <span class="vedio_play_info">类别：文学</span>
@@ -193,16 +193,16 @@
             <div class="cur-list">
                 <ul class="list-box">
                     <li class="on">
-                        <a href="#" class="list_title"><i style="font-size:15px" class="fa">&#xf0da</i>111<span class="a-check">小测</span></a>
+                        <a href="#" class="list_title"><i style="font-size:15px" class="fa">&#xf0da</i>111<span class="a-check" onclick="togg()">小测</span></a>
                     </li>
                     <li class="">
-                        <a href="#" class="list_title"><i style="font-size:15px" class="fa">&#xf0da</i>111<span class="a-check">小测</span></a>
+                        <a href="#" class="list_title"><i style="font-size:15px" class="fa">&#xf0da</i>111<span class="a-check" onclick="togg()">小测</span></a>
                     </li>
                     <li class="">
-                        <a href="#" class="list_title"><i style="font-size:15px" class="fa">&#xf0da</i>111<span class="a-check">小测</span></a>
+                        <a href="#" class="list_title"><i style="font-size:15px" class="fa">&#xf0da</i>111<span class="a-check" onclick="togg()">小测</span></a>
                     </li>
                     <li class="">
-                        <a href="#" class="list_title"><i style="font-size:15px" class="fa">&#xf0da</i>111<span class="a-check">小测</span></a>
+                        <a href="#" class="list_title"><i style="font-size:15px" class="fa">&#xf0da</i>111<span class="a-check" onclick="togg()">小测</span></a>
                     </li>
                 </ul>
             </div>
@@ -212,5 +212,14 @@
 <!--<div class="foot">
     版权所有©cccht 地址：山东省潍坊市东风东街5147号 邮编：11318230@qq.com
 </div>-->
+<script>
+    $(document).ready(function () {
+        $("#play").fadeIn();
+    });
+    function togg() {
+       $("#play").fadeToggle();
+       $("#check").fadeToggle();
+    }
+</script>
 </body>
 </html>
