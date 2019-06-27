@@ -72,3 +72,17 @@ li{
     height: 45px;
     line-height: 45px;
 }
+.upload_icon{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    transition: background .2s ease;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: -716px -332px;
+    background-image: url(//s1.hdslb.com/bfs/static/jinkela/space/asserts/icons.png);
+}
+.upload_icon:hover{
+    background-position: -716px -398px;
+}

@@ -5,16 +5,16 @@
     <div class="name_list">
         <ul>
             <li>
-                <button type="button" class="btn btn-light" name="info" onclick="loadXML(this.name)">基本资料</button>
+                <button type="button" class="btn btn-light" name="info" onclick="fadein(this.name)">基本资料</button>
             </li>
             <li>
-                <button type="button" class="btn btn-light" name="headimg" onclick="loadXML(this.name)">我的头像</button>
+                <button type="button" class="btn btn-light" name="headimg" onclick="fadein(this.name)">我的头像</button>
             </li>
             <li>
-                <button type="button" class="btn btn-light" name="pwd" onclick="loadXML(this.name)">密码管理</button>
+                <button type="button" class="btn btn-light" name="pwd" onclick="fadein(this.name)">密码管理</button>
             </li>
             <li>
-                <button type="button" class="btn btn-light" name="log" onclick="loadXML(this.name)">登录日志</button>
+                <button type="button" class="btn btn-light" name="log" onclick="fadein(this.name)">登录日志</button>
             </li>
         </ul>
     </div>
@@ -157,7 +157,7 @@
     $(document).ready(function () {
         $(".name_info").fadeIn();
     });
-    function loadXML(name) {
+    function fadein(name) {
         if (name == "info"){
             $(".name_headimg").fadeOut();
             $(".name_pwd").fadeOut();
